@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>7ka.photo - Фотограф Семенкевич Катя</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/scrolloverflow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+      #fullpage {
+        font-size: 12em;
+      }
+
+      #fullpage div {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+      }
+
+      .text {
+        position: relative;
+        left: 20px;
+        top: 40%;
+      }
+
+      #about-slide {
+        background-image: url("/assets/boy1.jpg");
+      }
+
+      #about-slide .text {
+        font-size: 1em;
+        left: 60px;
+        top: 0px;
+        color: #dddddd;
+      }
+
+      #about-slide .text h5 {
+        color: grey;
+      }
+
+
+      #children-slide {
+        background-image: url("/assets/child1.jpg");
+      }
+      #studio-slide .text {
+        font-size: 0.55em;
+      }
+
+
+      #portrait-slide {
+        background-image: url("/assets/fashion2.jpg");
+      }
+
+      #pregnant-slide {
+        background-image: url("/assets/pregnant1.jpg");
+      }
+
+
+      #children2-slide {
+        background-image: url("/assets/child2.jpg");
+      }
+
+
+      #studio-slide {
+        background-image: url("/assets/fashion1.jpg");
+      }
+
+      #contact-slide {
+        background-image: url("/assets/contact.jpg");
+      }
+      #contact-slide .text {
+        top: 0px;
+        left: 60px;
+      }
+
+      #contact-slide a,
+      #contact-slide  a:link,
+      #contact-slide  a:visited,
+      #contact-slide  a:active,
+      #contact-slide a:hover {
+        text-decoration: none;
+        color: white;
+
+      }
+      #contact-slide a:hover {
+          text-decoration: underline;
+      }
+
+      #contact-slide ul {
+        margin-left: 300px;
+        text-decoration: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="fullpage">
+    	<div id="about-slide" data-anchor="about" class="section">
+        <div class="text">
+          <h1>Семенкевич Катя</h1>
+          <h5>Профессиональный фотограф</h5>
+        </div>
+      </div>
+    	<div id="children-slide" data-anchor="children" class="section">
+        <div class="text">Особый подход к детям</div>
+      </div>
+      <div id="studio-slide" data-anchor="studio" class="section">
+        <div class="text">Студийная съемка высочайшего качества</div>
+      </div>
+      <div id="portrait-slide" data-anchor="portrait" class="section">
+        <div class="text">Художественные портреты</div>
+      </div>
+    	<div id="children2-slide" data-anchor="art" class="section">
+        <div class="text">Детальная обработка фотографий</div>
+      </div>
+      <div id="pregnant-slide" data-anchor="pregnant" class="section">
+        <div class="text">Большой опыт съемки беременных</div>
+      </div>
+      <div id="contact-slide" data-anchor="contact" class="section">
+        <div class="text">Я всегда на связи:</div>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/7ka.photo">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              7ka.photo
+            </a>
+          </li>
+          <li>
+            i@7ka.photo
+          </li>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+    	$('#fullpage').fullpage();
+    });
+  </script>
+</html>
